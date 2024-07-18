@@ -16,7 +16,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### Links
 
-- [Solution URL](https://www.frontendmentor.io/solutions/qr-code-component-using-css-flexbox-wlkqMbKLoC)
+- [Solution URL](https://www.frontendmentor.io/solutions/blog-preview-card-using-css-flexbox-5XCkyZqfBn)
 - [Live Site URL](https://frontendmentor-blog-preview-card-roan.vercel.app/)
 
 ## My process
