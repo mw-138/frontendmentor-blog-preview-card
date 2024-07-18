@@ -109,24 +109,27 @@ function Illustration(): ReactNode {
 export default function Home() {
   return (
     <main className="flex min-h-screen items-center flex-col gap-4 justify-center bg-yellow">
-      <article className="bg-white w-[370px] rounded-2xl flex flex-col p-4 gap-4 border border-black shadow-black shadow-solid">
+      <article className="bg-white w-[370px] rounded-2xl flex flex-col p-4 gap-4 border border-gray-950 shadow-gray-950 shadow-solid">
         <Illustration />
         <section className="flex flex-col gap-4">
           <a
             href="#"
-            className="bg-yellow text-black w-fit px-4 py-2 rounded-md font-[800]"
+            className="bg-yellow text-gray-950 w-fit px-4 py-2 rounded-md font-[800]"
           >
             Learning
           </a>
           <p className="text-gray-950 font-[500]">Published 21 Dec 2023</p>
-          <h1 className="text-yellow text-[22px] font-[800] tracking-normal leading-[120%]">
+          <h1 className="text-gray-950 hover:text-yellow text-[22px] font-[800] tracking-normal leading-[120%]">
             <Link href="#">HTML & CSS foundations</Link>
           </h1>
           <p className="text-gray-500 text-[16px] font-[500] tracking-[0.2px] leading-[140%]">
             These languages are the backbone of every website, defining
             structure, content, and presentation.
           </p>
-          <a href="#" className="text-black flex items-center gap-3 font-[800]">
+          <a
+            href="#"
+            className="text-gray-950 flex items-center gap-3 font-[800]"
+          >
             <span>
               <Image src={AvatarImage} width={30} height={30} alt="avatar" />
             </span>
@@ -134,7 +137,7 @@ export default function Home() {
           </a>
         </section>
       </article>
-      <footer className="text-[11px] text-center text-black">
+      <footer className="text-[11px] text-center text-gray-950">
         Challenge by{" "}
         <Link
           href="https://www.frontendmentor.io?ref=challenge"
