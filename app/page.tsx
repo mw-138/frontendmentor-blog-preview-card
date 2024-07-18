@@ -1,113 +1,156 @@
 import Image from "next/image";
+import Link from "next/link";
+import AvatarImage from "@/public/images/image-avatar.webp";
+import { ReactNode } from "react";
+
+function Illustration(): ReactNode {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="336"
+      height="201"
+      fill="none"
+      viewBox="0 0 336 201"
+      className="rounded-xl"
+    >
+      <g clip-path="url(#a)">
+        <path fill="#F4D04E" d="M0 .5h336v200H0z" />
+        <rect
+          width="139"
+          height="95"
+          x="87.996"
+          y="77.729"
+          fill="#fff"
+          rx="47.5"
+          transform="rotate(-45 87.996 77.729)"
+        />
+        <rect
+          width="139"
+          height="95"
+          x="54.055"
+          y="77.729"
+          fill="#111"
+          rx="47.5"
+          transform="rotate(-45 54.055 77.729)"
+        />
+        <path
+          fill="#111"
+          d="M234.864 209.036 451.4-7.5l67.175 67.175-216.536 216.536z"
+        />
+        <rect
+          width="139"
+          height="95"
+          x="20.114"
+          y="77.729"
+          fill="#fff"
+          rx="47.5"
+          transform="rotate(-45 20.114 77.729)"
+        />
+        <rect
+          width="204.19"
+          height="270.554"
+          fill="#111"
+          rx="102.095"
+          transform="scale(-1 1) rotate(45 -103.887 14.564)"
+        />
+        <path
+          stroke="#fff"
+          stroke-width="3"
+          d="m6.69-357.5 135.583 135.727c12.481 12.494 12.481 32.737 0 45.231L-45.544 11.475c-12.481 12.494-12.481 32.737 0 45.23L107.088 209.5"
+        />
+        <path
+          stroke="#111"
+          stroke-width="3"
+          d="M69.965 71.719v23.334h23.334M136.079 52.273V28.94h-23.334M102.845 38.838v46.67M210.364-37.5l60.873 60.873c12.497 12.496 12.497 32.758 0 45.254l-77.745 77.746c-12.497 12.496-12.497 32.758 0 45.254l69.872 69.873"
+        />
+        <path
+          stroke="#111"
+          stroke-width="3"
+          d="m253.339 149.574-12.144 12.145 14.256 14.257v12.672h12.673l13.729 13.729 12.145-12.145M278.685 124.228l-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145M304.031 98.883l-12.145 12.144 14.257 14.257v12.673h12.673l13.729 13.729 12.144-12.145M329.376 73.537l-12.145 12.145 14.257 14.257v12.672h12.673l13.729 13.729 12.145-12.144"
+        />
+        <path
+          stroke="#fff"
+          stroke-width="5"
+          d="m354.722 48.191-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145"
+        />
+        <mask
+          id="b"
+          width="285"
+          height="285"
+          x="234"
+          y="-8"
+          maskUnits="userSpaceOnUse"
+        >
+          <path
+            fill="#111"
+            d="M234.864 209.036 451.4-7.5l67.175 67.175-216.536 216.536z"
+          />
+        </mask>
+        <g stroke="#fff" mask="url(#b)">
+          <path
+            stroke-width="3"
+            d="m253.339 149.574-12.144 12.145 14.256 14.257v12.672h12.673l13.729 13.729 12.145-12.145M278.685 124.228l-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145M304.031 98.883l-12.145 12.144 14.257 14.257v12.673h12.673l13.729 13.729 12.144-12.145M329.376 73.537l-12.145 12.145 14.257 14.257v12.672h12.673l13.729 13.729 12.145-12.145"
+          />
+          <path
+            stroke-width="5"
+            d="m354.722 48.191-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145"
+          />
+        </g>
+      </g>
+      <defs>
+        <clipPath id="a">
+          <path fill="#fff" d="M0 .5h336v200H0z" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
+    <main className="flex min-h-screen items-center flex-col gap-4 justify-center bg-yellow">
+      <article className="bg-white w-[370px] rounded-2xl flex flex-col p-4 gap-4 border border-black shadow-black shadow-solid">
+        <Illustration />
+        <section className="flex flex-col gap-4">
           <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#"
+            className="bg-yellow text-black w-fit px-4 py-2 rounded-md font-[800]"
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+            Learning
           </a>
-        </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
+          <p className="text-gray-950 font-[500]">Published 21 Dec 2023</p>
+          <h1 className="text-yellow text-[22px] font-[800] tracking-normal leading-[120%]">
+            <Link href="#">HTML & CSS foundations</Link>
+          </h1>
+          <p className="text-gray-500 text-[16px] font-[500] tracking-[0.2px] leading-[140%]">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+          <a href="#" className="text-black flex items-center gap-3 font-[800]">
+            <span>
+              <Image src={AvatarImage} width={30} height={30} alt="avatar" />
             </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            Greg Hooper
+          </a>
+        </section>
+      </article>
+      <footer className="text-[11px] text-center text-black">
+        Challenge by{" "}
+        <Link
+          href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
-          rel="noopener noreferrer"
         >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          Frontend Mentor
+        </Link>
+        . Coded by{" "}
+        <Link
+          href="https://www.frontendmentor.io/profile/mw-138"
           target="_blank"
-          rel="noopener noreferrer"
         >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+          mw-138
+        </Link>
+        .
+      </footer>
     </main>
   );
 }
